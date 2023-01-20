@@ -15,7 +15,7 @@
     --red-color: #FF2A2D;;
     --dark-color: #212529;
 
-    --redColor: #e75348;
+    --redColor: #00CDB0;;;
     --blcakColor: #000000;
     --textColor: #666666;
     --lightGray: #b2b2b2;
@@ -114,6 +114,8 @@ a {
 
 img {
     max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 
@@ -123,12 +125,6 @@ h1{
 
 a{
   text-decoration: none;
-}
-
-img{
-  max-width: 100%;
-  height: auto;
-  display: block;
 }
 
 h3,
@@ -470,9 +466,14 @@ div.o_page_loader.hidden{
 
 
 /*Start Home Page*/
-header .header-area .logo img,
-header .header-area .search-bar {
+header .header-area .logo img{
+    width: 100%;
+    height: 50px;
+    object-fit: cover;
     margin-top: 1rem;
+}
+header .header-area .search-bar {
+    margin-top: 2rem;
 }
 
 header .header-area .search-bar input {
@@ -486,6 +487,7 @@ header .header-area .search-bar button {
     right: 0;
     width: 3.8rem;
     height: 100%;
+    font-size: 1.8rem;
 }
 
 header nav {
@@ -512,8 +514,9 @@ header nav ul li {
     margin-bottom: 2rem;
 }
 
-header nav ul li a i {
+header nav ul li a ion-icon{
     margin-right: 1rem;
+    font-size: 2rem;
 }
 
 header .user-info {
@@ -526,7 +529,7 @@ header .user-info img {
     margin-right: 1rem;
 }
 
-header .user-info i {
+header .user-info ion-icon {
     font-size: 2.4rem;
 }
 
