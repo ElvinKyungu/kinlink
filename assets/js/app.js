@@ -14,22 +14,22 @@ const signUp = document.getElementById('sign-up'),
 
 signUp.addEventListener('click', ()=>{
     // Supression des classes d'abord si elles existent
-    loginIn.classList.remove('block')
-    loginUp.classList.remove('none')
+    loginIn.classList.remove('d-block')
+    loginUp.classList.remove('d-none')
 
     // Ajout des classes
-    loginIn.classList.toggle('none')
-    loginUp.classList.toggle('block')
+    loginIn.classList.toggle('d-none')
+    loginUp.classList.toggle('d-block')
 })
 
 signIn.addEventListener('click', ()=>{
     // Supression des classes d'abord si elles existent
-    loginIn.classList.remove('none')
-    loginUp.classList.remove('block')
+    loginIn.classList.remove('d-none')
+    loginUp.classList.remove('d-block')
 
     // Add classes
-    loginIn.classList.toggle('block')
-    loginUp.classList.toggle('none')
+    loginIn.classList.toggle('d-block')
+    loginUp.classList.toggle('d-none')
 })
 
 

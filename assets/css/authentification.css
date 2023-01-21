@@ -52,7 +52,7 @@
 }
 
 .login__title{
-  font-size: var(--h1-font-size);
+  font-size: var(--h1-font-size) !important;
   margin-bottom: 2rem;
 }
 
@@ -66,9 +66,9 @@
   border-radius: .5rem;
 }
 
-.login__icon{
+.login__box ion-icon{
   font-size: 1.5rem;
-  color: var(--first-color);
+  color: var(--green-color);
 }
 
 .login__input{
