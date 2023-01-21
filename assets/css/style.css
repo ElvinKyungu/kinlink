@@ -407,7 +407,7 @@ div.o_page_loader.hidden{
     height: 100%;
     opacity: 1;
     transition: opacity .9s;
-    z-index: 999;
+    z-index: 99999;
     background-color: #fff;
 }
 
@@ -995,7 +995,12 @@ main .content .box-1 .user-profile ul li a {
 }
 
 /*Responsive Home Page*/
-
+@media (max-width: 768px){
+    header .header-area .logo img {
+        object-fit: none;
+        margin-top: 0;
+    }
+}
 @media(min-width: 410px) {
     .content .box-4 .post .post-btn a {
         font-size: 1.6rem;
