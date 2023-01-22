@@ -7,7 +7,7 @@ setTimeout(()=>{
 
 // Menu navbar
 
-let btnMenu = document.querySelector('.user-info .fa-bars');
+let btnMenu = document.querySelector('.user-info .navbaricon');
 let menu = document.querySelector('#navbar');
 
 btnMenu.addEventListener('click', () => {
