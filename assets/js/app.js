@@ -5,6 +5,15 @@ setTimeout(()=>{
     preloader.classList.add('hidden');
 },3000)
 
+// Menu navbar
+
+let btnMenu = document.querySelector('.user-info .fa-bars');
+let menu = document.querySelector('#navbar');
+
+btnMenu.addEventListener('click', () => {
+    menu.classList.toggle('active');
+});
+
 
 /*===== LOGIN SHOW and HIDDEN =====*/
 const signUp = document.getElementById('sign-up'),
@@ -33,11 +42,3 @@ signIn.addEventListener('click', ()=>{
     loginUp.classList.toggle('d-none')
 })
 
-// Menu navbar
-
-let btnMenu = document.querySelector('.user-info .fa-bars');
-let menu = document.querySelector('#navbar');
-
-btnMenu.addEventListener('click', () => {
-    menu.classList.toggle('active');
-});
